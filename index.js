@@ -4,7 +4,7 @@ const Calculate = {
   },
 
   subtract(inputOne, subtrahend) {
-    return inputTwo - inputOne;
+    return inputOne - subtrahend;
   },
 
   multiply(inputOne, inputTwo) {
