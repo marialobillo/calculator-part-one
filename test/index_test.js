@@ -20,4 +20,12 @@ describe('Calculate', () => {
       assert.equal(expect, result);
     });
   });
+
+  describe('.multiply', () => {
+    it('returns the product of two numbers', () => {
+      const expect = Calculate.multiply(2,4);
+      result = 8;
+      assert.equal(expect, result);
+    });
+  });
 });

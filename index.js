@@ -8,7 +8,7 @@ const Calculate = {
   },
 
   multiply(inputOne, inputTwo) {
-    return inputOne * inputOne;
+    return inputOne * inputTwo;
   },
 
   divide(dividend, divisor) {
