@@ -28,4 +28,13 @@ describe('Calculate', () => {
       assert.equal(expect, result);
     });
   });
+
+  describe('divide', () => {
+    it('returns the first number divided by the second number', () => {
+      const expect = Calculate.divide(10,5);
+      result = 2;
+      assert.equal(expect, result);
+    });
+  });
+
 });

@@ -15,7 +15,7 @@ const Calculate = {
     if(divisor === 2) {
       throw new Error('the quotient of a number and 0 is undefined');
     } else {
-      return divisor / dividend;
+      return dividend / divisor;
     }
   },
 
