@@ -35,6 +35,20 @@ describe('Calculate', () => {
       result = 2;
       assert.equal(expect, result);
     });
+
+    it('throws an error when the divisor is 0', () => {
+      //const expect = Calculate.divide(8,0);
+      //result = RangeError;
+      //assert.throws(function() { throw new Error("Wrong value"); }, Error);
+    });
+  });
+
+  describe('absoluteValue', () => {
+    it('returns the absolute value of the input number', () => {
+      const expect = Calculate.absoluteValue(-5);
+      result = 5;
+      assert.equal(result, expect);
+    });
   });
 
 });
