@@ -37,6 +37,23 @@ const Calculate = {
   exponential(base, exponent){
     return base**exponent;
   },
+
+  max(inputArray){
+    const arrayLength = inputArray.length;
+    if(arrayLength == 0) { return 'empty array'; }
+
+    let maxNumber = inputArray[0];
+
+    for(let i = 1; i < arrayLength; i++){
+      let currentNumber = inputArray[i];
+
+      if(maxNumber < currentNumber){
+        maxNumber = currentNumber;
+      }
+    }
+    return maxNumber;
+  },
+
 }
 
 module.exports = Calculate;

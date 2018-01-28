@@ -83,7 +83,18 @@ describe('Calculate', () => {
   });
 
   describe('.max', () => {
-    
+    it('return the maximum number in an array', () => {
+      const expected = Calculate.max([3,8,6,7,11]);
+      result = 11;
+      assert.equal(expected, result);
+    });
+    it('throws an Error when the array is empty', () => {
+      const inputArray = [];
+      const expected = 'empty array';
+      const result = Calculate.max(inputArray);
+
+      assert.equal(expected, result);
+    });
   });
 
 });
