@@ -68,6 +68,17 @@ const Calculate = {
     return minNumber;
   },
 
+  average(inputArray){
+    const arrayLength = inputArray.length;
+    if(arrayLength == 0) {return 'empty array';}
+
+    total = 0
+    for(let i = 0; i < arrayLength; i++){
+      total += inputArray[i];
+    }
+    return total/arrayLength;
+  },
+
 
 }
 

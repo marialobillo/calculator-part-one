@@ -112,4 +112,16 @@ describe('Calculate', () => {
     });
   });
 
+  describe('.average', () => {
+    it('returns the average value of an array', () => {
+      const result = Calculate.average([6,8,3,7]);
+      const expected = 6
+      assert.equal(expected, result);
+    });
+    it('returns a message when array is empty', () => {
+      const result = Calculate.average([]);
+      const expected = 'empty array';
+      assert.equal(expected, result);
+    });
+  });
 });
