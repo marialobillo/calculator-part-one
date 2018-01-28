@@ -12,10 +12,8 @@ const Calculate = {
   },
 
   divide(dividend, divisor) {
-    if(divisor === 2) {
+    if(divisor === 0) {
       throw new Error('the quotient of a number and 0 is undefined');
-    } else if (!divisor) {
-      throw new RangeError("Division by zero.");
     } else {
       return dividend / divisor;
     }
@@ -34,6 +32,10 @@ const Calculate = {
       return 1;
     }
     return num * Calculate.factorial(num - 1);
+  },
+
+  exponential(base, exponent){
+    return base**exponent;
   },
 }
 

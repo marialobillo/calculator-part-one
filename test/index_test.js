@@ -5,7 +5,6 @@ const Calculate =  require('../index.js')
 describe('Calculate', () => {
 
   describe('.add', () => {
-
     it('returns the value of two numbers added together', () => {
       const expect = Calculate.add(2,4);
       result = 6;
@@ -37,9 +36,12 @@ describe('Calculate', () => {
     });
 
     it('throws an error when the divisor is 0', () => {
-      //const expect = Calculate.divide(8,0);
-      //result = RangeError;
-      //assert.throws(function() { throw new Error("Wrong value"); }, Error);
+      const dividend = 8;
+      const divisor = 0;
+      expected = Error;
+      const exercise = () => Calculate.divide(dividend, divisor);
+
+      assert.throws(exercise, expected);
     });
   });
 
@@ -67,6 +69,21 @@ describe('Calculate', () => {
       result = 1;
       assert.equal(expected, result);
     });
+  });
+
+  describe('.exponential', () => {
+    it('returns the result of a base raised to a power', () => {
+      const expected = Calculate.exponential(2,3);
+      result = 8;
+      assert.equal(expected, result);
+    });
+    it('returns 1 when the exponent is 0', () => {
+      const expected = Calculate.exponential(4,0);
+    });
+  });
+
+  describe('.max', () => {
+    
   });
 
 });
