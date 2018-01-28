@@ -97,4 +97,19 @@ describe('Calculate', () => {
     });
   });
 
+  describe('.min', () => {
+    it('returns the minimum number in an array', () => {
+      const expected = Calculate.min([2,5,6,7,3,4]);
+      result = 2;
+      assert.equal(expected, result);
+    });
+    it('returns a messaje of empty when is empty', () => {
+      const inputArray = [];
+      const expected = 'empty array';
+      const result = Calculate.min(inputArray);
+
+      assert.equal(expected, result);
+    });
+  });
+
 });

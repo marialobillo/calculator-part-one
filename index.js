@@ -54,6 +54,21 @@ const Calculate = {
     return maxNumber;
   },
 
+  min(inputArray){
+    const arrayLength = inputArray.length;
+    if(arrayLength == 0) {return 'empty array'; }
+
+    let minNumber = inputArray[0];
+    for(let i = 1; i < arrayLength; i++){
+      let currentNumber = inputArray[i];
+      if(minNumber > currentNumber){
+        minNumber = currentNumber;
+      }
+    }
+    return minNumber;
+  },
+
+
 }
 
 module.exports = Calculate;
